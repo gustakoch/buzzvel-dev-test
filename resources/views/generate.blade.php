@@ -11,7 +11,7 @@
             <div class="row mt-4">
                 <div class="col-sm-12 col-md-6">
                     <label for="name" class="form-label"><strong>Name:</strong></label>
-                    <input type="text" class="form-control" id="name" name="name" value="Gustavo" autocomplete="off" required>
+                    <input type="text" class="form-control" id="name" name="name" autocomplete="off" required>
                     <div class="invalid-feedback">
                         A name is required.
                     </div>
@@ -21,7 +21,7 @@
             <div class="row mt-3">
                 <div class="col-sm-12 col-md-6">
                     <label for="linkedin" class="form-label"><strong>LinkedIn:</strong></label>
-                    <input type="text" class="form-control" id="linkedin" name="linkedin" value="https://www.linkedin.com/in/gustakoch" autocomplete="off" required>
+                    <input type="text" class="form-control" id="linkedin" name="linkedin" autocomplete="off" required>
                     <div class="invalid-feedback">
                         A LinkedIn URL is required.
                     </div>
@@ -31,7 +31,7 @@
             <div class="row mt-3">
                 <div class="col-sm-12 col-md-6">
                     <label for="github" class="form-label"><strong>GitHub:</strong></label>
-                    <input type="text" class="form-control" id="github" name="github" value="https://github.com/gustakoch" autocomplete="off" required>
+                    <input type="text" class="form-control" id="github" name="github" autocomplete="off" required>
                     <div class="invalid-feedback">
                         A GitHub URL is required.
                     </div>
