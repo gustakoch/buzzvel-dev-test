@@ -8,6 +8,5 @@
         <h3 class="mt-4">Scan Me</h3>
 
         <img src="{{ asset('storage/qrcodes/' . $qrcode . '.png') }}" alt="Qr Code" />
-        <a href="{{ $url }}">Link do QrCode</a>
     </div>
 @endsection
