@@ -16,7 +16,8 @@ Generate QRCodes pictures with URL. Once generated, you can scan the QRCode whic
 - Versioning of the project's code was done based on the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard.
 - All QRCode generation data is being saved in the Postgres database.
 - The `/entries` endpoint was defined to return all qrcode generation requests.
-- The application was deployed. You can access it through the link [buzzvel.gustakoch.com.br](https://buzzvel.gustakoch.com.br).
+- In the root of the project, you can find an Insomnia file called `endpoints.json`, which contains the route that returns all entries.
+- The application was deployed. You can access it through the link [buzzvel.gustakoch.com.br](https://buzzvel.gustakoch.com.br). 
 
 ## Running the project locally
 This application was developed using Docker. At the root of the project, there is a file called **docker-compose.yml** which contains the php-apache and postgres containers. Once inside the project folder, in the terminal, just run the `docker-compose up -d` command to upload the application's containers. The postgres database settings are the default and you can find them in the `.env-example` file.
