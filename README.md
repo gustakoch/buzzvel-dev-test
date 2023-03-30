@@ -20,4 +20,15 @@ Generate QRCodes pictures with URL. Once generated, you can scan the QRCode whic
 - The application was deployed. You can access it through the link [buzzvel.gustakoch.com.br](https://buzzvel.gustakoch.com.br). 
 
 ## Running the project locally
-This application was developed using Docker. At the root of the project, there is a file called **docker-compose.yml** which contains the php-apache and postgres containers. Once inside the project folder, in the terminal, just run the `docker-compose up -d` command to upload the application's containers. The postgres database settings are the default and you can find them in the `.env-example` file.
+This application was developed using Docker. Follow the steps below to correctly upload the local development environment.
+
+1. Clone this repository in a folder on your computer using the `git clone` command on your terminal.
+2. After cloning the project, enter the folder and execute the `docker-compose up -d` command to upload the application's containers.
+3. Right after, access the web server container using the following command `docker exec -it webserver-buzzvel /bin/bash`.
+4. Execute `composer install && composer env && composer key` to install the project's dependencies, copy the .env file and generate a new key for the Laravel project.
+5. It is also necessary to grant permission to the **/storage** folder with the command `chmod -R 777 storage`.
+6. The QRCodes images were saved on disk, inside the project, we will execute the `php artisan storage:link` command to create a simlink to the public folder.
+7. Execute `php artisan migrate` to run the migrations and create the table in the database.
+8. We are ready! Access [http://localhost](http://localhost) and generate some QRCodes.
+
+**Postgres database access settings can be found in the `.env` file.**
