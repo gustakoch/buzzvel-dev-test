@@ -14,7 +14,7 @@ Generate QRCodes pictures with URL. Once generated, you can scan the QRCode whic
 
 ## About the project
 - Versioning of the project's code was done based on the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard.
-- All QRCode generation data is being saved in the Postgres database.
+- All QRCode generation data is being saved in the Postgres database. Only unique slugs are stored in the database.
 - The `/entries` endpoint was defined to return all qrcode generation requests.
 - In the root of the project, you can find an Insomnia file called `endpoints.json`, which contains the route that returns all entries.
 - The application was deployed. You can access it through the link [buzzvel.gustakoch.com.br](https://buzzvel.gustakoch.com.br). 
