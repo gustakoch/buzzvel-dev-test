@@ -2,9 +2,7 @@ version: "3"
 services:
     webserver:
         build: .
-        container_name: apache-php-buzzvel
-        extra_hosts:
-            - "host.docker.internal:host-gateway"
+        container_name: webserver-buzzvel
         volumes:
             - ./:/var/www/html
             - /etc/timezone:/etc/timezone
